@@ -88,14 +88,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay-service.sysfs
-
-$(call soong_config_set,livedisplay_sysfs,enable_ab,true)
-$(call soong_config_set,livedisplay_sysfs,enable_ce,true)
-$(call soong_config_set,livedisplay_sysfs,enable_se,true)
-
 # Power
 $(call soong_config_set,qtipower,tap_to_wake_node,/proc/sys/dev/dt2w)
 
