@@ -9,11 +9,11 @@
         <transport>hwbinder</transport>
         <fqname>@1.1::IRadioConfig/default</fqname>
     </hal>
-    <hal format="hidl">
+    <hal format="aidl">
         <name>vendor.lineage.livedisplay</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.0::IAdaptiveBacklight/default</fqname>
-        <fqname>@2.0::IColorEnhancement/default</fqname>
-        <fqname>@2.0::ISunlightEnhancement/default</fqname>
+        <version>1</version>
+        <fqname>IAdaptiveBacklight/default</fqname>
+        <fqname>IColorEnhancement/default</fqname>
+        <fqname>ISunlightEnhancement/default</fqname>
     </hal>
 </manifest>
