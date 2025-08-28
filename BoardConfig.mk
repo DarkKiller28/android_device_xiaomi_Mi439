@@ -160,5 +160,8 @@ SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/biometrics/sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# Build Fix
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+
 # Inherit from the proprietary version
 include vendor/xiaomi/Mi439/BoardConfigVendor.mk
