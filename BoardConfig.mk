@@ -163,5 +163,8 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 # Build Fix
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
+# Boot Animation
+TARGET_BOOT_ANIMATION_RES := 720
+
 # Inherit from the proprietary version
 include vendor/xiaomi/Mi439/BoardConfigVendor.mk
